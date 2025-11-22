@@ -1,3 +1,6 @@
+#ifndef PIN_H
+#define PIN_H
+
 enum Pin
 {
     D0 = 0,
@@ -14,10 +17,12 @@ enum Pin
     D11S = 11,
     D12 = 12,
     D13 = 13,
-    A0 = 14,
-    A1 = 15,
-    A2 = 16,
-    A3 = 17,
-    A4 = 18,
-    A5 = 19
+    Analog0 = 14,
+    Analog1 = 15,
+    Analog2 = 16,
+    Analog3 = 17,
+    Analog4 = 18,
+    Analog5 = 19
 };
+
+#endif

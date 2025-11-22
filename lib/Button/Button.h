@@ -2,7 +2,7 @@
 #define BUTTON_h
 
 #include <Arduino.h>
-#include "Pin.h"
+#include "../Pin.h"
 
 class BUTTON
 {

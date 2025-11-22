@@ -2,7 +2,7 @@
 #define LED_h
 
 #include <Arduino.h>
-#include "Pin.h"
+#include "../Pin.h"
 class LED
 {
 protected:
