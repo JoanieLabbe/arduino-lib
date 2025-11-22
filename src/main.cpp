@@ -1,7 +1,22 @@
 #include <Arduino.h>
-#include "FourBitDigitalTube.h"
+#include "../Pin.h"
+#include "ActiveBuzzer.h"
+#include "PassiveBuzzer.h"
+#include "Pitches.h"
+
 // put function declarations here:
-FourBitDigitalTube tube(1, 2, 3, 4, 5, 6, 7, 8, 12, 11, 10, 9);
+ActiveBuzzer activeBuzzer(Pin::D9S);
+
+Note melody[] = {
+    Note::Note_C4, Note::Note_G3, Note::Note_G3, Note::Note_A3, Note::Note_G3, Note::Note_REST, Note::Note_B3, Note::Note_C4};
+
+// note durations: 4 = quarter note, 8 = eighth note, etc.:
+
+int noteDurations[] = {
+
+    4, 8, 8, 4, 4, 4, 4, 4
+
+};
 
 void setup()
 {
@@ -11,10 +26,6 @@ void setup()
 void loop()
 {
     // put your main code here, to run repeatedly:
-    int number = 0;
-    while (true)
-    {
-        tube.displayNumberDuring(number, 1000);
-        number = (number + 1) % 10000;
-    }
+    activeBuzzer.playMelody(melody, noteDurations, 8);
+    delay(2000);
 }
