@@ -17,7 +17,7 @@ public:
     int onState = HIGH;
     int offState = LOW;
 
-    SevenSegmentModel(int pinA, int pinB, int pinC, int pinD, int pinE, int pinF, int pinG, int pinDP, int onState, int offState);
+    SevenSegmentModel(Pin pinA, Pin pinB, Pin pinC, Pin pinD, Pin pinE, Pin pinF, Pin pinG, Pin pinDP, int onState, int offState);
 
     void Clear();
 };

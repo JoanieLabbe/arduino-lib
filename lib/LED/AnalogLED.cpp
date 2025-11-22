@@ -1,12 +1,12 @@
 #include "Arduino.h"
 #include "AnalogLED.h"
 
-AnalogLED::AnalogLED(int pin)
+AnalogLED::AnalogLED(Pin pin)
     : LED(pin)
 {
 }
 
-AnalogLED::AnalogLED(int pin, int state)
+AnalogLED::AnalogLED(Pin pin, int state)
     : LED(pin, state)
 {
 }

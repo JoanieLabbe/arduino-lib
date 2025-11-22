@@ -6,8 +6,8 @@
 class DigitalLED : public LED
 {
 public:
-    DigitalLED(int pin);
-    DigitalLED(int pin, int state);
+    DigitalLED(Pin pin);
+    DigitalLED(Pin pin, int state);
     ~DigitalLED();
 
     void changeState(int newState) override;

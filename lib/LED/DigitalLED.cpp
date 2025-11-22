@@ -1,12 +1,12 @@
 #include "Arduino.h"
 #include "DigitalLED.h"
 
-DigitalLED::DigitalLED(int pin)
+DigitalLED::DigitalLED(Pin pin)
     : LED(pin)
 {
 }
 
-DigitalLED::DigitalLED(int pin, int state)
+DigitalLED::DigitalLED(Pin pin, int state)
     : LED(pin, state)
 {
 }

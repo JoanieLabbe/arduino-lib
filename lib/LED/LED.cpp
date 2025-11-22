@@ -1,13 +1,13 @@
 #include "Arduino.h"
 #include "LED.h"
 
-LED::LED(int pin)
+LED::LED(Pin pin)
 {
     this->pin = pin;
     pinMode(pin, OUTPUT);
 }
 
-LED::LED(int pin, int state)
+LED::LED(Pin pin, int state)
     : LED(pin)
 {
     this->state = state;

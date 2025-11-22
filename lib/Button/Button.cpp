@@ -1,7 +1,7 @@
 #include "Arduino.h"
 #include "button.h"
 
-BUTTON::BUTTON(int pin)
+BUTTON::BUTTON(Pin pin)
 {
     this->pin = pin;
     pinMode(pin, INPUT_PULLUP);

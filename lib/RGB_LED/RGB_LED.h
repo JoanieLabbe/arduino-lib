@@ -12,7 +12,7 @@ private:
     AnalogLED blue;
 
 public:
-    RGB_LED(int redPin, int greenPin, int bluePin);
+    RGB_LED(Pin redPin, Pin greenPin, Pin bluePin);
     ~RGB_LED();
 
     void setColor(int redValue, int greenValue, int blueValue);

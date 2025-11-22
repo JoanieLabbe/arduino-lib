@@ -2,16 +2,16 @@
 #define LED_h
 
 #include <Arduino.h>
-
+#include "Pin.h"
 class LED
 {
 protected:
-    int pin;
+    Pin pin;
     int state = LOW;
 
 public:
-    LED(int pin);
-    LED(int pin, int state);
+    LED(Pin pin);
+    LED(Pin pin, int state);
     ~LED();
 
     virtual void changeState(int newState);

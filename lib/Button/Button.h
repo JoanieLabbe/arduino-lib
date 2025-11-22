@@ -2,14 +2,15 @@
 #define BUTTON_h
 
 #include <Arduino.h>
+#include "Pin.h"
 
 class BUTTON
 {
 private:
-    int pin;
+    Pin pin;
 
 public:
-    BUTTON(int pin);
+    BUTTON(Pin pin);
     ~BUTTON();
 
     int readState();

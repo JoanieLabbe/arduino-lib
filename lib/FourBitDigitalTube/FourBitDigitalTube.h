@@ -10,13 +10,13 @@ private:
     static const int DELAY = 2;
 
     SevenSegment sevenSegment;
-    int d1;
-    int d2;
-    int d3;
-    int d4;
+    Pin d1;
+    Pin d2;
+    Pin d3;
+    Pin d4;
 
 public:
-    FourBitDigitalTube(int pinA, int pinB, int pinC, int pinD, int pinE, int pinF, int pinG, int pinDP, int pinD1, int pinD2, int pinD3, int pinD4);
+    FourBitDigitalTube(Pin pinA, Pin pinB, Pin pinC, Pin pinD, Pin pinE, Pin pinF, Pin pinG, Pin pinDP, Pin pinD1, Pin pinD2, Pin pinD3, Pin pinD4);
     ~FourBitDigitalTube();
 
     void displayDigitAt(int digit, int position);

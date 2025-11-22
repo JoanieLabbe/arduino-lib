@@ -6,8 +6,8 @@
 class AnalogLED : public LED
 {
 public:
-    AnalogLED(int pin);
-    AnalogLED(int pin, int state);
+    AnalogLED(Pin pin);
+    AnalogLED(Pin pin, int state);
     ~AnalogLED();
 
     void changeState(int newState) override;

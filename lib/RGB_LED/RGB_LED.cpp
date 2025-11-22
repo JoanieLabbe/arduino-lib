@@ -1,7 +1,7 @@
 #include "Arduino.h"
 #include "RGB_LED.h"
 
-RGB_LED::RGB_LED(int redPin, int greenPin, int bluePin)
+RGB_LED::RGB_LED(Pin redPin, Pin greenPin, Pin bluePin)
     : red(redPin), green(greenPin), blue(bluePin)
 {
 }

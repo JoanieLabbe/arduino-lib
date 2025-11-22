@@ -1,7 +1,7 @@
 #include "SevenSegment.h"
 #include "SevenSegmentDisplayNumber.h"
 
-SevenSegment::SevenSegment(int pinA, int pinB, int pinC, int pinD, int pinE, int pinF, int pinG, int pinDP, int onState = HIGH, int offState = LOW)
+SevenSegment::SevenSegment(Pin pinA, Pin pinB, Pin pinC, Pin pinD, Pin pinE, Pin pinF, Pin pinG, Pin pinDP, int onState = HIGH, int offState = LOW)
     : model(pinA, pinB, pinC, pinD,
             pinE, pinF, pinG, pinDP, onState, offState)
 {

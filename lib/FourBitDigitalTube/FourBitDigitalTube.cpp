@@ -1,6 +1,6 @@
 #include "FourBitDigitalTube.h"
 
-FourBitDigitalTube::FourBitDigitalTube(int pinA, int pinB, int pinC, int pinD, int pinE, int pinF, int pinG, int pinDP, int pinD1, int pinD2, int pinD3, int pinD4)
+FourBitDigitalTube::FourBitDigitalTube(Pin pinA, Pin pinB, Pin pinC, Pin pinD, Pin pinE, Pin pinF, Pin pinG, Pin pinDP, Pin pinD1, Pin pinD2, Pin pinD3, Pin pinD4)
     : sevenSegment(pinA, pinB, pinC, pinD, pinE, pinF, pinG, pinDP, LOW, HIGH)
 {
     // Initialize digit control pins

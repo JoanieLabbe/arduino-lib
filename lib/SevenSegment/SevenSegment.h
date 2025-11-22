@@ -15,7 +15,7 @@ private:
     SevenSegmentModel model;
 
 public:
-    SevenSegment(int pinA, int pinB, int pinC, int pinD, int pinE, int pinF, int pinG, int pinDP, int onState = HIGH, int offState = LOW);
+    SevenSegment(Pin pinA, Pin pinB, Pin pinC, Pin pinD, Pin pinE, Pin pinF, Pin pinG, Pin pinDP, int onState = HIGH, int offState = LOW);
     ~SevenSegment();
 
     void displayDigit(int digit);

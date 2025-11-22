@@ -1,8 +1,7 @@
 #include "SevenSegmentModel.h"
 
-SevenSegmentModel::SevenSegmentModel(int pinA, int pinB, int pinC, int pinD, int pinE, int pinF, int pinG, int pinDP, int onState, int offState)
-    : segmentA(pinA),
-      segmentB(pinB), segmentC(pinC), segmentD(pinD),
+SevenSegmentModel::SevenSegmentModel(Pin pinA, Pin pinB, Pin pinC, Pin pinD, Pin pinE, Pin pinF, Pin pinG, Pin pinDP, int onState, int offState)
+    : segmentA(pinA), segmentB(pinB), segmentC(pinC), segmentD(pinD),
       segmentE(pinE), segmentF(pinF), segmentG(pinG), segmentDP(pinDP)
 {
     this->onState = onState;
